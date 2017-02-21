@@ -3,7 +3,15 @@ $(document).ready(function(){
 
 	var login = $('#loginform');
 	var recover = $('#recoverform');
+	var register = $('#registerform')
 	var speed = 400;
+
+
+	$('#to-register').click(function () {
+        $("#loginform").slideUp();
+        $("#registerform").fadeIn();
+    });
+
 
 	$('#to-recover').click(function(){
 		
@@ -13,14 +21,15 @@ $(document).ready(function(){
 	$('#to-login').click(function(){
 		
 		$("#recoverform").hide();
+        $("#registerform").hide();
 		$("#loginform").fadeIn();
 	});
-	
-	
-	$('#to-login').click(function(){
-	
-	});
-    
+
+    $('#to-register-login').click(function(){
+
+        $("#registerform").hide();
+        $("#loginform").fadeIn();
+    });
     if($.browser.msie == true && $.browser.version.slice(0,3) < 10) {
         $('input[placeholder]').each(function(){ 
        
