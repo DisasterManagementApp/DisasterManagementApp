@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	setTimeout(function(){
+	/*setTimeout(function(){
 			add_message('Linda','img/demo/av2.jpg','Hello Every one do u want to freindship with me?')
 		},'1000');
 	setTimeout(function(){
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		},'12000');	
 	setTimeout(function(){
             remove_user('Linda','Linda')
-        },'16000');
+        },'16000');*/
    	var i = 0;
 	function add_message(name,img,msg,clear) {
 		i = i + 1;

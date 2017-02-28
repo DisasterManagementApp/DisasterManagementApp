@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" href="css/matrix-login.css" />
+    <link rel="stylesheet" href="css/uniform.css" />
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'/>
 </head>
@@ -53,13 +54,16 @@
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span ><input type="text"   placeholder="First name" /></span>
+                    <span ><input type="text" class="pull-left"   placeholder="First name" /></span>
                     <span ><input type="text" placeholder="Last name" /></span>
 
-                    <span ><input type="email" placeholder="Email" /></span>
+                    <span ><input type="email" class="pull-left"  placeholder="Email" /></span>
                     <span ><input type="password"   placeholder="Enter Password"  /></span>
-                    <span ><input type="password"   placeholder="Re-Enter Password"  /></span>
-
+                    <span ><input type="password" class="pull-left"   placeholder="Re-Enter Password"  /></span>
+                    <div class="uploader" id="uniform-undefined"><input type="file" size="19" style="opacity: 0;">
+                        <span class="filename">No file selected</span>
+                        <span class="action">Choose File</span>
+                    </div>
                 </div>
             </div>
         </div>
